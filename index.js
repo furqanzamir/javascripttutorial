@@ -727,5 +727,46 @@
 // let parentelem = document.body.previousSibling
 // console.log(parentelem) // html
 
+//document.getElementsByTagName('gender'); // Get all the element value of name="gender"
 
+//document.querySelectorAll('p')
+
+//Event, Onload,OnClick, onChange, Mouse event, Key Event, Event Handler attribute etc 
+
+//4 four of javascript event alert(); or Function calling, Inline Event, addEventListener
+
+//addEventListener if we call multiple all will be run, console or alert both will be run,
+
+//Onclick event call last one this overide, last one will be execute.
+
+//Event Object is the parent-object of the event object.
+
+//MouseEvent, focusEvent, KeyboardEvent etc
+
+//Input Event onchange event
+
+//settimeout or setinterval and cleartimeout
+
+//Spread Operator to combine two array
+
+// const colors = ['red', 'green', 'blue', 'white'];
+// const mycolors = ['red', 'green', 'blue', 'white', 'yellow', 'black'];
+// const mynewcolors = [...colors, 'yellow', 'black']
+// console.log(mynewcolors);
+
+
+//Array include 
+// const mycolors = ['red', 'green', 'blue', 'white', 'yellow', 'black'];
+// const incarray = mycolors.includes('blue');
+// console.log(incarray);
+
+//Exponential operator
+ 
+// console.log(2**4); //output 16
+
+// //ES8 Feature 2017 Years
+
+// const message = "my name is furqan";
+// console.log(message.padStart(5));
+// console.log(message.padEnd(10));
 
