@@ -770,3 +770,467 @@
 // console.log(message.padStart(5));
 // console.log(message.padEnd(10));
 
+ //cleartimeout example 
+//  function myfunctionnew(){
+//     alert('Welcome to my team');
+// }
+
+// //settimeout example 
+// const btnme = document.querySelector('#btnme');
+// const showme = document.querySelector('#showme');
+
+// //setinterval
+// const showmyname = ()=>{
+//     showme.innerHTML = 'Loading ..... ';
+//     setTimeout(() => {
+//         showme.innerHTML = 'Furqn Zamir';
+//     }, 1000);
+// }
+
+// btnme.addEventListener('click',showmyname);
+
+// function myalertfun(){
+//     alert('i am awesome!');
+// }
+// const thirdevent = document.getElementById('thirdevent');
+// thirdevent.onclick= function () { 
+//     alert('i am awesome again!');
+//  }
+
+//  //clikc event in addeventlistener
+//  const fourthevent = document.getElementById('fourthevent');
+//  fourthevent.addEventListener('click',()=>{
+//     alert('i am awesome again and again!')
+//  })
+
+//  //events
+//  const fivethevent = document.getElementById('fivethevent');
+//  const checkeventfn = () =>{
+//     console.log(event);
+//     console.log(event.target);
+//     console.log(event.type);        
+//  }
+
+//  fivethevent.addEventListener('click',checkeventfn);
+
+//  //mousedown event
+//  function mousedown(){
+//     document.getElementById('sixthevent').style.backgroundColor="red";
+//  }
+
+//  //mouseup event
+//  function mouseup(){
+//     document.getElementById('sixthevent').style.backgroundColor="green";
+//  }
+
+
+//  //mouseevnt with addeventlister
+//  const seventhevent = document.getElementById('seventhevent');
+//  const mouseenter = ()=>{
+//     seventhevent.style.backgroundColor = 'purple'
+//  }
+//  seventhevent.addEventListener('onmouseenter',mouseenter);
+
+//  //mouseleave with addeventlister
+//  const seventhevent2 = document.getElementById('seventhevent');
+//  const mouseleave = ()=>{
+//     seventhevent2.style.backgroundColor = 'yellow'
+//  }
+//  seventhevent2.addEventListener('onmouseleave',mouseleave);
+
+//  //keypress, keup and keydown
+//  const keypress = ()=>{document.getElementById('keys').innerHTML= `your press ${event.key} and its code is ${event.code}`};
+//  const keydown = ()=>{document.getElementById('keys').innerText='Keys its Down'}
+//  const keyup = ()=>{document.getElementById('keys').innerText='Keys its Up'}
+
+//  //select event 
+// const selectElement = () =>{
+//     const iceCreams = document.getElementById('iceCreams').value;
+//     const inputchange = document.getElementById('ice').value;
+//     const result = document.getElementById('result');
+//     result.innerHTML = `Furqan select this falavour ${iceCreams} and ${inputchange}`
+//     console.log(`${iceCreams} and ${inputchange}`)
+// }
+// const iceCreams = document.getElementById('iceCreams');
+
+// //onchange evenet
+// iceCreams.addEventListener('change',() => {
+//     const iceCreams = document.getElementById('iceCreams').value;
+//     const inputchange = document.getElementById('ice').value;
+//     const result = document.getElementById('result');
+//     result.innerHTML = `Furqan select this falavour ${iceCreams} and ${inputchange}`;
+//     console.log(`${iceCreams} and ${inputchange}`);
+// });
+
+// //mouseenter event
+//  function mouseenter(){
+//     document.getElementById('seventhevent').style.backgroundColor="purple";
+//  }
+
+//  //mouseleave event
+//  function mouseleave(){
+//     document.getElementById('seventhevent').style.backgroundColor="yellow";
+//  }
+
+
+// function changeContent(){
+//     document.getElementById("textchange").innerHTML="Welcome to Furqan Zamir";
+//     let txtchange= document.querySelector('#textchange');
+//     txtchange.innerHTML="Welcome to furqan zamir"
+// }
+
+// alert(location.href);
+
+// //confirm 
+// if(confirm("right now you are in Javascript Tutorial")){
+//     location.href="https://www.w3schools.com/";
+// }
+// function goback(){
+//     window.history.back();
+// }
+
+// function myfunction(){
+//     let d = new Date();
+//     d.setHours(5);
+//     d.setDate(16);
+//     document.getElementById("demo").innerHTML=d;
+// }
+// (function(){
+//     setInterval(() => {
+//         var d = new Date().toLocaleTimeString();
+//         document.getElementById("time").innerHTML=d;
+//     }, 1000);
+// })();
+
+//Object
+
+// let biodata= {
+//     myname:"furqan zamir",
+//     lastname: "zamir ahmed",
+//     myage:36,
+//     getdata(){
+//         console.log(`my name is ${biodata.myname} and my age is ${biodata.myage}`)
+//     }
+// }
+
+// biodata.getdata();
+
+// let biodata= {
+//     myname:{
+//         realname: "furqan Zamir Real Namr",
+//         chanelname:" Furqan Zamir Channel Name"
+//     },
+//     lastname: "zamir ahmed",
+//     myage:36,
+//     getdata(){
+//         console.log(`my name is ${biodata.myname} and my age is ${biodata.myage}`)
+//     }
+// }
+
+// console.log(biodata.myname.realname);
+
+//This object
+
+// console.log(this);
+// console.log(this.alert("awesome "));
+
+// var mynewname = "furqan"
+// function myfun() {
+//     console.log(this.mynewname);
+// }
+// myfun();
+
+
+// const obj={
+//     myage:35,
+//     myname(){
+//         console.log(this);
+//     }
+// }
+// obj.myname();
+
+//fat arrow function we can not used this function, it will call window object
+// const obj={
+//     myage:35,
+//     myname:()=>{
+//         console.log(this);
+//     }
+// }
+// obj.myname();
+
+// let biodata= {
+//     myname:{
+//         realname: "furqan Zamir Real Namr",
+//         chanelname:" Furqan Zamir Channel Name"
+//     },
+//     lastname: "zamir ahmed",
+//     myage:36,
+//     getdata(){
+//         console.log(`my name is ${this.myname.chanelname} and my age is ${this.myage}`)
+//     }
+// }
+// biodata.getdata();
+
+//Array Destructuring and object destructuring
+
+// const mybiodata =["furqan", "zamir", 26];
+
+// // let myfname = mybiodata[0];
+// // let mylastname = mybiodata[1];
+// // let myage = mybiodata[2];
+
+// let [myfname,mylastname,myage,mydegree="BCIT"] = mybiodata;
+// console.log(mydegree);
+
+// const mybiodata ={
+//     myname : "furqan 1225",
+//     myage : 26,
+// }
+// let age =mybiodata.age;
+// let myname= mybiodata.myname;
+
+// console.log(myname);
+
+
+//Dynamic data how to pass in array object, we used square bracket in dynamic
+
+// let myname = "Furqan Zamir";
+// let biodata={
+//     [myname]:"Hello how are you!",
+//     [20+6]:"is my age"
+// }
+// console.log(biodata);
+
+//Create own key value in array object
+
+// let myname = "Furqan zamir";
+// let myage = 26;
+
+// // const biodata = {
+// //     myname: myname,
+// //     myage:myage
+// // }
+
+// const biodata = {myname,myage};
+// console.log(biodata)
+
+// let biodata = {myname:"furqan",myage:26}
+// console.log(Object.values(biodata));
+// console.log(Object.entries(biodata));
+
+
+//rest spread opeator in array
+// const person = {name:"furqan", myage:26,degree:"bcit",lastname:"zamir ahmed"};
+// const eperson = {...person};
+
+// console.log(person);
+// console.log(eperson);
+
+//flat in array 
+// const arr =[
+//     ['zone_1','zone_2'],
+//     ['zone_3','zone_4'],
+//     ['zone_5','zone_6'],
+//     ['zone_7','zone_8',['zone_5','zone_6']]
+// ];
+
+// console.log(arr.flat());
+// console.log(arr.flat(2));
+// console.log(arr.flat(Infinity));
+
+//fromEntries
+
+// let person = {myname:"furqan Zamir", myage:26}
+// let arrobj = Object.entries(person);
+// console.log(arrobj)
+// console.log(Object.fromEntries(arrobj));
+
+// use strict force to declare variable 
+// "use strict"
+// let x=3.14;
+// console.log(x);
+
+//that function call as a argument its higher function
+// const add = (a,b)=>{
+//     return a+b;
+// }
+//console.log(add(5,10));
+
+// const sub = (a,b)=>{
+//     return Math.abs(a-b);
+// }
+//console.log(sub(20,-10));
+
+// const mul = (a,b)=>{
+//     return a*b;
+// }
+//console.log(mul(20,10));
+
+// const calculation = (num1,num2,operator)=>{
+//     return operator(num1,num2);
+// }
+//sub,mul,add is callbcak function
+// console.log(calculation(5,2,sub));
+// console.log(calculation(5,2,mul));
+// console.log(calculation(5,2,add));
+
+//Asyncrhronouse JavaScript Programming
+//Hoisting Javascipt is a mechanism where variables and functions(var used in this, Hoisting mean function call before declaration)
+//Declaration are moved to the top of their scope before the code execute
+
+//We have a creation phase and execution phase
+// console.log(myname);
+// var myname;
+// myname = "furqan";
+
+//Scope change in javascript lexically define
+//const PI = 3.142;
+
+//Its allow parant function and variable but if you call function scope outside the function, it will be not defin see the next example
+// let a = "Hello Guyz..."
+// const first =()=>{
+//     let b ="How are you?"
+//     let second=()=>{
+//         let c = "Hi i am fine thank you"
+//         console.log(a+b+c);
+//     }
+//     second();
+// }
+// first();
+
+
+// let a = "Hello Guyz..."
+// const first =()=>{
+//     let b ="How are you?"
+//     let second=()=>{
+//         let c = "Hi i am fine thank you"        
+//     }
+//     second();
+//     console.log(a+b+c); // here c is not define
+// }
+// first();
+
+//Closure in Javascript
+
+// const outerfunction = (a)=>{
+//     let b = 10;
+//     const innerfunction = () =>{
+//         let sum = a+b;
+//         console.log(`the sum of two no is ${sum}`)
+//     }
+//     innerfunction();
+// }
+// console.log(outerfunction(5));
+
+
+// const outerfunction = (a)=>{
+//     let b = 10;
+//     const innerfunction = () =>{
+//         let sum = a+b;
+//         console.log(`the sum of two no is ${sum}`)
+//     }
+//     return innerfunction;
+// }
+// let checkclosour = outerfunction(5);
+// console.dir(checkclosour());
+
+//Synchronous and Asynchronous Javascript
+//Synchronouse javascript one by one execute the function etc
+//and Asycnhronouse javascript run as a parallel 
+
+//Asynchronouse Example
+// const funct2 = () =>{
+//     console.log("The function 2 is called") 
+// }
+// const func1=()=>{
+// console.log("the function 1 is called")
+// funct2();
+// console.log("the another function called function2");
+// }
+// func1();
+
+//Asynchronouse 
+// const funct3 = () =>{
+//     setTimeout(()=>{
+//         console.log("The function 2 is called")
+//     },2000);    
+// }
+// const func4=()=>{
+//     console.log("the function 1 is called")
+//     funct3();
+//     console.log("the another function called function2");
+// }
+// func4();
+
+//Event Loop 
+//Currying Technique in Javascript means function inside function inside function call and all function has one argument
+//At its core, currying is a functional programming technique that involves breaking down a function that takes multiple arguments into a series of functions that take one argument each. This creates a chain of functions, where each function returns another function until the final result is achieved.
+
+//sum(5)(3)(8)
+// function sum(num1){
+//     //console.log(num1)
+//     return function(num2){
+//        // console.log(num1,num2,num3)
+//        return function(num3){
+//         console.log(num1,num2,num3)
+//        }
+//     }
+// }
+// sum(5)(3)(8)
+
+// const sum = (num1)=>(num2)=>(num3)=>console.log(num1+num2+num3);
+// sum(5)(3)(8)
+
+//Call Back Function Hell
+// setTimeout(()=>{
+//     console.log("1 work is done")
+//     setTimeout(() => {
+//         console.log("2 work is done")
+//         setTimeout(() => {
+//             console.log("3 work is done")
+//             setTimeout(() => {
+//                 console.log("4 work is done")
+//                 setTimeout(() => {
+//                     console.log("5 work is done")
+//                     setTimeout(() => {
+//                         console.log("6 work is done")
+//                     }, 1000);
+//                 }, 1000);
+//             }, 1000);
+//         }, 1000);
+//     }, 1000);
+// },1000)
+
+// var my_object = {key_1:"some text", key_1:true,key_3:5}
+// var object_as_string = JSON.stringify(my_object);
+// console.log(object_as_string);
+
+// typeof(object_as_string);
+
+//PROMISES
+//Either Success and reject or Fullfill and Reject
+
+// const joke = document.querySelector("#joke");
+// const jokeBtn = document.querySelector("#jokeBtn");
+// const setHeader = {
+//     headers:{
+//         Accept: "application/json"
+//     }
+// }
+
+// const generatejokes = ()=>{
+//      fetch('https://icanhazdadjoke.com', setHeader)
+//     .then((res)=>res.json() )
+//     .then( (data) => {
+//         joke.insertAdjacentHTML("afterbegin",data.joke);
+//     }).catch((error)=>{
+//         console.log(error)
+//     })
+// }
+// jokeBtn.addEventListener("click",generatejokes);
+// generatejokes();
+
+
+// const res = await fetch('https://icanhazdadjoke.com', setHeader);
+// const data = await res.json();
+
