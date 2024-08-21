@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <div class="row">
-            <!-- <h2 class="pt-8">JavaScript Tutorial</h2> -->
-            <!-- <p id="textchange">Click the button to display a date after changing the </p>
+            <h2 class="pt-8">JavaScript Tutorial</h2>
+            <p id="textchange">Click the button to display a date after changing the </p>
             alert() 
             <button type="button" class="btn btn-primary" onclick="alert('i am awesome')">Try It</button>
             <div style="height: 30px;"></div>
@@ -28,12 +28,12 @@
             <button type="button" class="btn btn-primary" id="fivethevent">Try It</button>
 
             <div style="height: 30px;"></div>
-            MouseDonw or MouseUp Object
+            <!-- MouseDonw or MouseUp Object
             <p class="btn" onmousedown="mousedown()" onmouseup="mouseup()" id="sixthevent">Try It</p>
 
             <div style="height: 30px;"></div>
             MouseEnter or MouseLeave Object
-            <p class="btn" onmouseenter="mouseenter()" onmouseleave="mouseleave()" id="seventhevent">Try It</p>
+            <p class="btn" onmouseenter="mouseenter()" onmouseleave="mouseleave()" id="seventhevent">Try It</p> -->
 
             <div style="height: 30px;"></div>
             keyPress, Keydown and keyup
@@ -64,11 +64,11 @@
             <button onclick="myvar= setTimeout(myfunctionnew,2000)" class="btn btn-primary">setTimeout</button>
             <div style="height: 30px;"></div>
             <button onclick="clearTimeout(myvar)" class="btn btn-primary">clearTimeout</button>
-            -->
+           
 
-            <!-- <div id="container" class="d-flex gap-4 flex-wrap"></div> -->
-            <!-- <div id="joke">Awesome joke is loading ...</div>
-            <button type="button" id="jokeBtn" class="btn btn-primary">Next Joke</button> -->
+            <div id="container" class="d-flex gap-4 flex-wrap"></div>
+            <div id="joke">Awesome joke is loading ...</div>
+            <button type="button" id="jokeBtn" class="btn btn-primary">Next Joke</button>
         </div>
     </div>
     
@@ -77,40 +77,40 @@
 
 <script>
 
-    // const container = document.querySelector("#container"); 
-    //     const request = new XMLHttpRequest();
-    //     request.open("GET","https://fakestoreapi.com/users");
-    //     request.send();        
-    //     request.addEventListener('load',function(){
-    //     //console.log(this.responseText)
-    //     const [data]=JSON.parse(this.responseText);
-    //     console.log(data);
-    //     // console.log(data.address.street);
-    //     const htmlData= `
-    //     <div class="card" style="width: 18rem;">
-    //         <img src="https://placehold.co/600x400/EEE/31343C" class="card-img-top" alt="...">
-    //         <div class="card-body">
-    //             <h5 class="card-title">Employee Data</h5>
-    //             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    //         </div>
-    //         <ul class="list-group list-group-flush">
-    //             <li class="list-group-item">First Name:${data.name.firstname}</li>
-    //             <li class="list-group-item">Last Name:${data.name.lastname}</li>
-    //             <li class="list-group-item">Username:${data.username}</li>
-    //             <li class="list-group-item">Password:${data.password}</li>
-    //             <li class="list-group-item">Email:${data.email}</li>
-    //         </ul>
-    //         <div class="card-body">
-    //             <ul class="list-group list-group-flush">
-    //                 <li class="list-group-item">Address</li>
-    //                 <li class="list-group-item">Address:${data.address.city}</li>
-    //                 <li class="list-group-item">Address:${data.address.street}</li>
-    //             </ul>
-    //         </div>
-    //         </div>
-    //         `
-    //         container.insertAdjacentHTML("afterbegin",htmlData)
-    //     });
+    const container = document.querySelector("#container"); 
+        const request = new XMLHttpRequest();
+        request.open("GET","https://fakestoreapi.com/users");
+        request.send();        
+        request.addEventListener('load',function(){
+        //console.log(this.responseText)
+        const [data]=JSON.parse(this.responseText);
+        console.log(data);
+        // console.log(data.address.street);
+        const htmlData= `
+        <div class="card" style="width: 18rem;">
+            <img src="https://placehold.co/600x400/EEE/31343C" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Employee Data</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">First Name:${data.name.firstname}</li>
+                <li class="list-group-item">Last Name:${data.name.lastname}</li>
+                <li class="list-group-item">Username:${data.username}</li>
+                <li class="list-group-item">Password:${data.password}</li>
+                <li class="list-group-item">Email:${data.email}</li>
+            </ul>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Address</li>
+                    <li class="list-group-item">Address:${data.address.city}</li>
+                    <li class="list-group-item">Address:${data.address.street}</li>
+                </ul>
+            </div>
+            </div>
+            `
+            container.insertAdjacentHTML("afterbegin",htmlData)
+        });
 </script>
 </body>
 </html>

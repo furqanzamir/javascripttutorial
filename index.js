@@ -1210,25 +1210,25 @@
 //PROMISES
 //Either Success and reject or Fullfill and Reject
 
-// const joke = document.querySelector("#joke");
-// const jokeBtn = document.querySelector("#jokeBtn");
-// const setHeader = {
-//     headers:{
-//         Accept: "application/json"
-//     }
-// }
+const joke = document.querySelector("#joke");
+const jokeBtn = document.querySelector("#jokeBtn");
+const setHeader = {
+    headers:{
+        Accept: "application/json"
+    }
+}
 
-// const generatejokes = ()=>{
-//      fetch('https://icanhazdadjoke.com', setHeader)
-//     .then((res)=>res.json() )
-//     .then( (data) => {
-//         joke.insertAdjacentHTML("afterbegin",data.joke);
-//     }).catch((error)=>{
-//         console.log(error)
-//     })
-// }
-// jokeBtn.addEventListener("click",generatejokes);
-// generatejokes();
+const generatejokes = ()=>{
+     fetch('https://icanhazdadjoke.com', setHeader)
+    .then((res)=>res.json() )
+    .then( (data) => {
+        joke.insertAdjacentHTML("afterbegin",data.joke);
+    }).catch((error)=>{
+        console.log(error)
+    })
+}
+jokeBtn.addEventListener("click",generatejokes);
+generatejokes();
 
 
 // const res = await fetch('https://icanhazdadjoke.com', setHeader);
