@@ -20,6 +20,7 @@
             border-radius: 30px;
             padding: 8px 40px;
             box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+            margin-bottom: 15px;
         }
         #primaryBtn{
             background-image: linear-gradient(to right, #33001b, #ff0084);
@@ -52,7 +53,7 @@
             border-radius: 5px;
             color: #ffffff;
             font-size: 1rem;
-            height: 80px;
+            height: auto;
             text-align: start;
         }
         .notification{
@@ -80,12 +81,18 @@
             margin: 0px;
             padding: 10px 0px;
         }
+        .gradientcss{
+            @media (max-width: 992px) {
+                min-height: 400px;
+            }
+        }
+        
     </style>
 </head>
 <body>
         <div class="container">
-            <div class="row justify-content-center align-content-center align-content-center vh-100">
-                <div class="col-lg-5 text-center">
+            <div class=" gradientcss row justify-content-center align-content-center align-content-center vh-100">
+                <div class="col-lg-7 text-center">
                     <h2>Generate a CSS Color Gradient</h2>
                     <div class="direction-gradian my-4">
                         <h5>Choose orientation</h5>
@@ -102,11 +109,11 @@
                     </div>
                     <div class="generate-gradian-section my-2">  
                         <h5 class="my-3">Enter Colors</h5> 
-                        <div class="row">
-                            <div class="col-lg-3"><button type="button" class="btn btn-primary me-2" id="primaryBtn">#aa3c3c</button></div>
-                            <div class="col-lg-3"><input type="color" id="ColorPickerprim" oninput="document.querySelector('#primaryBtn').innerText= this.value" value="#33001b"></div>
-                            <div class="col-lg-3"><button type="button" class="btn btn-info ms-2" id="scondaryBtn">#aa3c3c</button></div>
-                            <div class="col-lg-3"><input type="color" id="ColorPickersecond" oninput="document.querySelector('#scondaryBtn').innerText= this.value" value="#ff0084" ></div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-5"><button type="button" class="btn btn-primary me-2" id="primaryBtn">#aa3c3c</button></div>
+                            <div class="col-lg-3 col-5"><input type="color" id="ColorPickerprim" oninput="document.querySelector('#primaryBtn').innerText= this.value" value="#33001b"></div>
+                            <div class="col-lg-3 col-5"><button type="button" class="btn btn-info ms-2" id="scondaryBtn">#aa3c3c</button></div>
+                            <div class="col-lg-3 col-5"><input type="color" id="ColorPickersecond" oninput="document.querySelector('#scondaryBtn').innerText= this.value" value="#ff0084" ></div>
                         </div>    
                     </div> 
                     <h5 class="my-3">CSS Code:</h5>
